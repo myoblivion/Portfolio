@@ -27,7 +27,6 @@ const ProjectsComponent = () => {
           <div className="card">
             <div className="card__details"><a href="https://myoblivion.github.io/space-tour-fem/#/">Frontend Mentor | Space Tourism</a></div>
           </div>
-
         </div>
       </div>
     </div>
