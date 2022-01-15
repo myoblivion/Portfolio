@@ -1,0 +1,233 @@
+@use "../components/mixins" as mixin;
+body {
+  background-color: black;
+}
+.home {
+  .title-home,
+  .button-explore {
+    width: 50%;
+    min-height: 70vh;
+  }
+  .title-home {
+    @include mixin.displayFlex(column, center, flex-end);
+    h1,
+    h2,
+    h3,
+    h4 {
+      display: block;
+      width: 80%;
+      color: lavender;
+    }
+    h1 {
+      display: block;
+      font-family: "Roboto Mono", monospace;
+      font-weight: lighter;
+      font-size: 1.7vw;
+      -webkit-text-stroke: black;
+      color: rgba(255, 255, 255, 0.905);
+    }
+    h2 {
+      font-family: "Roboto Mono", monospace;
+      font-size: 3.7vw;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.905);
+    }
+    h3 {
+      display: block;
+      font-family: "Roboto Mono", monospace;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    h4 {
+      display: block;
+      font-family: "Roboto Mono", monospace;
+      text-transform: uppercase;
+      font-weight: lighter;
+    }
+  }
+  .button-explore {
+    position: relative;
+    .btn {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 10%;
+      right: 20%;
+      width: 45%;
+      height: 30%;
+      padding: 2%;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.5s;
+      p {
+        position: relative;
+        display: inline-block;
+        padding: 25px 30px;
+        margin: 40px 0;
+        color: #a18ef8e3;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        letter-spacing: 4px;
+        overflow: hidden;
+        margin-right: 50px;
+        font-family: "Roboto Mono", monospace;
+        font-weight: bold;
+      }
+      p:hover {
+        background: #a18ef8e3;
+        color: #050801;
+        box-shadow: 0 0 3px #a18ef8e3, 0 0 15px #a18ef8e3, 0 0 20px #a18ef8e3,
+          0 0 100px #a18ef8e3;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+      }
+      p:nth-child(1) {
+        filter: hue-rotate(270deg);
+      }
+      p:nth-child(2) {
+        filter: hue-rotate(110deg);
+      }
+      p span {
+        position: absolute;
+        display: block;
+      }
+      p span:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #a18ef8e3);
+        animation: animate1 1s linear infinite;
+      }
+      @keyframes animate1 {
+        0% {
+          left: -100%;
+        }
+        50%,
+        100% {
+          left: 100%;
+        }
+      }
+      p span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #a18ef8e3);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+      }
+      @keyframes animate2 {
+        0% {
+          top: -100%;
+        }
+        50%,
+        100% {
+          top: 100%;
+        }
+      }
+      p span:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #a18ef8e3);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+      }
+      @keyframes animate3 {
+        0% {
+          right: -100%;
+        }
+        50%,
+        100% {
+          right: 100%;
+        }
+      }
+
+      p span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #a18ef8e3);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+      }
+      @keyframes animate4 {
+        0% {
+          bottom: -100%;
+        }
+        50%,
+        100% {
+          bottom: 100%;
+        }
+      }
+    }
+  }
+}
+
+// TABLET 768x1024
+
+@media (max-width: 768px) {
+  .home {
+    .title-home,
+    .button-explore {
+      width: 100%;
+      min-height: initial;
+    }
+    .title-home {
+      margin-top: 3em;
+      h1,
+      p {
+        text-align: center;
+      }
+      h1 {
+        .title {
+          font-size: 2.5vw;
+        }
+      }
+      p {
+        width: 100%;
+        font-size: 2.5vw;
+      }
+    }
+    .button-explore {
+      @include mixin.displayFlex(row, center, center);
+      position: inherit;
+      .btn {
+        position: inherit;
+        width: 25vw;
+        height: 25vw;
+        span {
+          font-size: 4vw;
+        }
+      }
+    }
+  }
+}
+
+// MOBILE 450px
+
+@media (max-width: 450px) {
+  .home {
+    .title-home {
+      position: relative;
+      h1 {
+        position: absolute;
+        width: 80%;
+        .title_home {
+          top: 50%;
+          font-size: 4.5vw;
+        }
+      }
+      p {
+        width: 100%;
+        font-size: 4vw;
+      }
+    }
+    .button-explore {
+      margin-bottom: 2em;
+    }
+  }
+}
