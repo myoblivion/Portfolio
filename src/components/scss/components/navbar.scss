@@ -6,6 +6,7 @@ header {
     .bars-navbar {
         display: none !important;
     }
+    
     .navbar {
         @include mixin.displayFlex(row, center, center);
         width: 60%;
