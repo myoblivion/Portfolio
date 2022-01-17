@@ -140,7 +140,9 @@ const AboutComponent = () => {
             </div>
             <div className="contact-presentation">
               <p>
-                 Hi! I'm France Lee. I'm a 22-year-old guy from the Philippines. I am a self-taught Web Developer. I enjoy coding, especially taking a lot of challenges.{" "}
+                Hi! I'm France Lee. I'm a 22-year-old guy from the Philippines.
+                I am a self-taught Web Developer. I enjoy coding, especially
+                taking a lot of challenges.{" "}
               </p>
             </div>
             <div className="contact-social clearfix">
@@ -178,7 +180,10 @@ const AboutComponent = () => {
                 <div className="experience-title">Barista </div>
                 <div className="company-description">
                   <p>
-                    It was a very nice experience. Especially the tiring days where I'll be satisfied wheneve my shift was over. I made a lot of Milk tea beverages and yeah it was a very lovely experience!
+                    It was a very nice experience. Especially the tiring days
+                    where I'll be satisfied wheneve my shift was over. I made a
+                    lot of Milk tea beverages and yeah it was a very lovely
+                    experience!
                   </p>
                 </div>
               </div>
@@ -189,12 +194,13 @@ const AboutComponent = () => {
               </div>
 
               <div className="job-wrapper clearfix">
-                <div className="experience-title">
-                  Work Staff
-                </div>
+                <div className="experience-title">Work Staff</div>
                 <div className="company-description">
                   <p>
-                    It was a very lovely experience. I make a lot of lava cakes with ice cream on top of it which is very delicious. A lot of people enjoyed the deserts that we serve and you can see their smiles which is awesome!
+                    It was a very lovely experience. I make a lot of lava cakes
+                    with ice cream on top of it which is very delicious. A lot
+                    of people enjoyed the deserts that we serve and you can see
+                    their smiles which is awesome!
                   </p>
                 </div>
               </div>
@@ -205,10 +211,14 @@ const AboutComponent = () => {
               </div>
 
               <div className="job-wrapper clearfix">
-                <div className="experience-title"> Web Designer / Web Developer </div>
+                <div className="experience-title">
+                  {" "}
+                  Web Designer / Web Developer{" "}
+                </div>
                 <div className="company-description">
                   <p>
-                    I hope I experience a lot of things about this work, and also learn a lot. I enjoy taking a lot of challenges.
+                    I hope I experience a lot of things about this work, and
+                    also learn a lot. I enjoy taking a lot of challenges.
                   </p>
                 </div>
               </div>
@@ -230,10 +240,13 @@ const AboutComponent = () => {
             <div className="section-wrapper clearfix">
               <h3 className="section-title">Hobbies</h3>
               <p>
-                I draw traditionally most of the time, since I find it very relaxing. I also use Photoshop for a lot of things. Memes, logo, photo manipulations, and vector.
+                I draw traditionally most of the time, since I find it very
+                relaxing. I also use Photoshop for a lot of things. Memes, logo,
+                photo manipulations, and vector.
               </p>
               <p>
-                A lot of times, I love to listen to music, whenever I go outside, draw, or do any kinds of work. I love music!
+                A lot of times, I love to listen to music, whenever I go
+                outside, draw, or do any kinds of work. I love music!
               </p>
             </div>
           </div>

@@ -114,3 +114,13 @@ $border-radius: 10px;
     }
   }
 }
+@media (max-width: 450px) {
+  .wrapper {
+    .section {
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      }
+    }
+  }
+}
