@@ -136,9 +136,21 @@
 @media (max-width: 450px) {
   .wrapper {
     .form {
+      margin-top: 5em;
       overflow: hidden;
-      width: 80%;
-      margin: auto;
+      width: 100%;
+      .rows {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        margin: auto;
+      }
+
     }
   }
 }
